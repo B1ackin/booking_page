@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domovita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+    
+</head>
+<body>
+    <div class="container-header">
+        <header class="header">
+            <a href="#"><img src="img/logo_domovita.png" alt="Логотип"></a>
+        </header>
+    </div>
+    <h1 class="mobile_title">Оформление бронирования</h1>
+    <section class="container main-section">
+        <div class="form">
+            <h1 class="form__main-title">Оформление бронирования</h1>
+            <section class="form__option-wrapper">
+                <h3 class="form__option-title title">Ваша поездка:</h3>
+                <div class="form__option-inner">
+                    <div class="form__option-date date">
+                        <h5 class="date__text">Дата</h5>
+                        <div class="date__items">
+                            <div class="date__item form-input">
+                                <label>Заезд</label>
+                                <input id="checkin"/>
+                                <button class="date__cancel"><img src="img/icons/cross.svg" alt=""></button>
+                            </div>
+                            <div class="date__item form-input">
+                                <label>Отъезд</label>
+                                <input id="checkout"/>
+                                   <button class="date__cancel"><img src="img/icons/cross.svg" alt=""></button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="form__option-guest guest">
+                        <h5 class="guest__text">Гости</h5>
+                        <div class="guest__item form-input">
+                            <label>Количество гостей</label>
+                            <input type="text" value="3" >
+                            <button class="guest__cancel"><img src="img/icons/cross.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="form__contact-wrapper">
+                <h3 class="form__contact-title title">Ваши контактные данные:</h3>
+                <div class="form__contact-inner">
+                    <div class="form__contact-form">
+                        <button class="form__contact-edit"><img src="img/icons/pencil.svg" alt="Карандаш"></button>
+                        <div class="form__contact-item">
+                            <div class="form__contact-icon phone">
+                                <img src="./img/icons/handset.svg" alt="">
+                                <p>Телефон</p>
+                            </div>
+                            <div class="form__contact-icon name">
+                                <img src="./img/icons/people.svg" alt="">
+                                <p>ФИО</p>
+                            </div>
+                        </div>
+                        <div class="form__contact-item">
+                            <div class="form__contact-icon phone">
+                                <div class="form__contact-text">+375 44 730 95 65</div>
+                            </div>
+                            <div class="form__contact-icon name">
+                                <div class="form__contact-text">Ягодкина Милена Олеговна</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__method">
+                    <div class="form__method-inner">
+                        <p>Предпочительный способ связи</p>
+                        <div class="form__method-buttons buttons">
+                            <button class="form__method-button">Только звонки</button>
+                            <button class="form__method-button active">Звонки и сообщения</button>
+                        </div>
+                    </div>
+                    <p class="form__method-description">В указанном виде связи с вами при необходимости свяжется владелец квартиры, не забывайте проверять :)</p>
+                </div>
+            </section>
+            <section class="form__comments">
+                <div class="form__comments-inner">
+                    <h5 class="form__comments-title">Вы можете оставить дополнительные комментарии владельцу:</h5>
+                    <textarea placeholder="Напишите свой комментарий" rows="8"></textarea>
+                </div>
+                <p class="form__comments-police">Нажимая кнопку ниже, я принимаю условия (Правила дома, установленные хозяином, Правила Domovita в отношении повторного 
+                    бронирования и возврата средств) и соглашаюсь, что Domovita может списать средства с моего способа оплаты, если ответственность 
+                    за ущерб лежит на мне.</p>
+                <button class="form__comments-button">Подтвердить и оплатить</button>
+            </section>
+        </div>
+        <section class="detail">
+            <div class="detail-wrapper">
+                <section class="detail__location-inner">
+                    <div class="detail__location-image image">
+                        <img class="image-desktop" src="img/photos/apartament.png" alt="Апартаменты">
+                        <img class="image-mobile" src="img/photos/apartament-mobile.png" alt="Апартаменты">
+                    </div>
+                    <div class="detail__location-text">
+                        <p>3-комн. квартира в Минске пр-т Независимости, д. 14</p>
+                        <div class="detail__location-items">
+                            <div class="detail__location-items_inner">
+                                <div class="detail__location-item"><img src="img/icons/location.svg" alt="">Первомайский р-н </div>
+                                <div class="detail__location-item"><img src="img/icons/metro.svg" alt="">Уручье</div>
+                            </div>
+                            <div class="detail__location-items_inner">
+                                <div class="detail__location-item">2 кровати</div>
+                                <div class="detail__location-item circle"></span>Совмещенный санузел</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="detail__trip">
+                    <h3 class="detail__trip-title title">Детали стоимости:</h3>
+                    <div class="detail__trip-inner">
+                        <div class="detail__trip-left_block">
+                            <p class="detail__trip_text">24 $ x 7 дней</p> 
+                            <p class="detail__trip_text">Предоплата <span>15%</span></p>
+                        </div>
+                        <div class="detail__trip-right_block">
+                            <p class="detail__trip-price">434.16 BYN</p>
+                            <p class="detail__trip-price">65.1 BYN</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="detail__prepay">
+                    <div class="detail__prepay-text">Предоплата за бронирование:</div>
+                    <div class="detail__prepay-price">65.1 BYN</div>
+                </section>
+            </div>
+            <section class="detail__owner">
+                <div class="detail__owner-info">
+                    <div class="detail__owner-image">
+                        <img src="img/icons/no-photo.svg" alt="">
+                    </div>
+                    <div class="detail__owner-text">
+                        <div class="detail__owner-text_name">Наталья</div>
+                        <div class="detail__owner-text_role">Собственник</div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </section>
+    </section>
+    <div class="container-footer">
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__top-image">
+                    <a href=""><img src="/img/logo_domovita.png" alt="Логотип"></a>
+                </div>
+                <div class="footer__top-social">
+                    <div class="footer__top-rating">
+                        <p>Наш рейтинг 4.7 из 5 (805):</p>
+                        <img src="img/icons/stars.svg" alt="Рейтинг">
+                    </div>
+                    <div class="footer__top-social_icon">
+                        <a href="#"><img src="img/icons/fb.svg" alt="Фейсбук"></a>
+                        <a href="#"><img src="img/icons/twitter.svg" alt="Твиттер"></a>
+                        <a href="#"><img src="img/icons/vk.svg" alt="Вконтакте"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__bottom-menu">
+                    <li class="footer__bottom-menu_item"><a href="">О нас</a></li>
+                    <li class="footer__bottom-menu_item"><a href="">Контакты</a></li>
+                    <li class="footer__bottom-menu_item"><a href="">Реклама</a></li>
+                    <li class="footer__bottom-menu_item"><a href="">Условия использования</a></li>
+                    <li class="footer__bottom-menu_item"><a href="">Словарь терминов и понятий</a></li>
+                </ul>
+                <div class="footer__bottom-mobile">
+                    <a href="#" class="footer__bottom-mobile_button">Мобильная версия</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const picker = new easepick.create({
+            element: "#checkin",
+            css: [
+                "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css",
+                'css/slider/slider.css',
+            ],
+            zIndex: 10,
+            lang: "ru-RU",
+            locale: {
+                previousMonth: '<img src="img/icons/left-arrow.svg"/>',
+                nextMonth: '<img src="img/icons/right-arrow.svg"/>'
+                                
+            },
+            format: "DD.MM.YY",
+            grid: 4,
+            RangePlugin: {
+                elementEnd: "#checkout",
+                repick: true
+            },
+            plugins: [
+                "AmpPlugin",
+                "RangePlugin"
+            ]
+        })
+    </script>
+</body>
+</html>

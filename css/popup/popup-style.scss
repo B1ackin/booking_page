@@ -1,0 +1,147 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+$color-indigo: #112B42;
+$color-grey-text: #90979C;
+$color-grey-border: #E4E5E7;
+$color-blue: #EFF7FF;
+$color-blue-accent: #418CCF;
+
+$border-accent: 50px;
+
+button {
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    
+}
+h1 {
+    margin: 0;
+}
+
+.popup {
+    min-height: 600px;
+    width: 655px;
+    border: 1px solid #E4E5E7;
+    border-radius: 30px;
+    padding: 15px;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: 300;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    &__date {
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+    }
+    &__apply {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #FF7F4E;
+        outline: none;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+        padding: 12px 24px;
+    }
+    &__text {
+        &-cancel {
+            width: 318px;
+            font-size: 14px;
+            color: #A2AAB0;
+            text-align: center;
+        }
+    }
+    .guest {
+        margin-bottom: 20px;
+        &__item {
+            position: relative;
+            input {
+                
+                width: 350px;
+            }
+            
+        }
+    }
+    
+    .form-input {
+        label {
+            color: $color-grey-text;
+            font-size: 13px;
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            background: #fff;
+        }
+        input {
+            border: 1px solid $color-grey-border;
+            border-radius: $border-accent;
+            padding: 14px 15px;
+            outline:none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button {
+            border: none;
+            outline: none;
+            height: 12.5px;
+            width: 12.5px;
+            cursor: pointer;
+            background: none;
+            position: absolute;
+            right: 23px;
+            top: 15px;
+        }
+        .active {
+            border: 1px solid $color-blue-accent;
+        }
+    }
+    .date {
+
+        &__items {
+            display: flex;
+            
+        }
+        &__text {
+            font-size: 16px;
+            color: $color-indigo;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 185px;
+        
+            
+            &:first-child {
+                margin-right: 10px;
+            }
+            
+        }
+    }
+}

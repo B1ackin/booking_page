@@ -1,0 +1,122 @@
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.popup {
+  min-height: 600px;
+  width: 655px;
+  border: 1px solid #E4E5E7;
+  border-radius: 30px;
+  padding: 15px;
+}
+.popup__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.popup__title {
+  font-weight: 300;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.popup__date-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.popup__apply {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #FF7F4E;
+  outline: none;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+.popup__text-cancel {
+  width: 318px;
+  font-size: 14px;
+  color: #A2AAB0;
+  text-align: center;
+}
+.popup .guest {
+  margin-bottom: 20px;
+}
+.popup .guest__item {
+  position: relative;
+}
+.popup .guest__item input {
+  width: 350px;
+}
+.popup .form-input label {
+  color: #90979C;
+  font-size: 13px;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  background: #fff;
+}
+.popup .form-input input {
+  border: 1px solid #E4E5E7;
+  border-radius: 50px;
+  padding: 14px 15px;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.popup .form-input button {
+  border: none;
+  outline: none;
+  height: 12.5px;
+  width: 12.5px;
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  right: 23px;
+  top: 15px;
+}
+.popup .form-input .active {
+  border: 1px solid #418CCF;
+}
+.popup .date__items {
+  display: flex;
+}
+.popup .date__text {
+  font-size: 16px;
+  color: #112B42;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.popup .date__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 185px;
+}
+.popup .date__item:first-child {
+  margin-right: 10px;
+}/*# sourceMappingURL=popup-style.css.map */

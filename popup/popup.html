@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up</title>
+    <link rel="stylesheet" href="../css/popup/popup-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+</head>
+<body>
+    <section class="main">
+        <div class="popup">
+            <div class="popup__nav">
+                <a href="#"><img src="../img/icons/arrow-left.svg" alt="стрелка-лево"></a>
+                <button><img src="../img/icons/close.svg" alt="крестик"></button>
+            </div>
+            <div class="popup__inner">
+                <h1 class="popup__title">Ваша поездка</h1>
+                <div class="popup__guest guest">
+                    <div class="guest__item form-input">
+                        <label>Количество гостей</label>
+                        <input type="text" value="3" >
+                        <button class="guest__cancel"><img src="../img/icons/shape.svg" alt="стрелка вверх"></button>
+                    </div>
+                </div>
+                <div class="popup__date-inner">
+                    <div class="popup__date-date date">
+                        <div class="date__items">
+                            <div class="date__item form-input">
+                                <label>Заезд</label>
+                                <input id="checkin" class="active"/>
+                                <button class="date__cancel"><img src="../img/icons/cross.svg" alt=""></button>
+                            </div>
+                            <div class="date__item form-input">
+                                <label>Отъезд</label>
+                                <input id="checkout" />
+                                <button class="date__cancel"><img src="../img/icons/cross.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="popup__apply">Внести изменения</button>
+                <p class="popup__text-cancel">После внесения изменений вы вернётесь к бронированию</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const picker = new easepick.create({
+            element: "#checkin",
+            css: [
+                "https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css",
+                '../css/slider/slider.css',
+            ],
+            zIndex: 10,
+            lang: "ru-RU",
+            locale: {
+                previousMonth: '<img src="../img/icons/left-arrow.svg"/>',
+                nextMonth: '<img src="../img/icons/right-arrow.svg"/>'
+                                
+            },
+            inline: true,
+            format: "DD.MM.YY",
+            grid: 4,
+            RangePlugin: {
+                elementEnd: "#checkout",
+                repick: true
+            },
+            plugins: [
+                "AmpPlugin",
+                "RangePlugin"
+            ]
+        })
+    </script>
+</body>
+</html>

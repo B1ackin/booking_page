@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@easepick/amp-plugin": "^1.2.0",
+    "@easepick/core": "^1.2.0",
+    "@easepick/lock-plugin": "^1.2.0",
+    "@easepick/range-plugin": "^1.2.0"
+  }
+}
